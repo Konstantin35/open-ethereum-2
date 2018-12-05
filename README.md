@@ -27,7 +27,7 @@
 Dependencies:
 
   * go >= 1.9
-  * parity (will not work with geth)
+  * `parity` and `geth`
   * redis-server >= 2.8.0
   * nodejs >= 4 LTS
   * nginx
