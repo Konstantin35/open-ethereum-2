@@ -65,7 +65,7 @@ func (s *ProxyServer) fetchBlockTemplate() {
 	}
 	
     var height uint64
-	if len(reply) > 3 {
+    if len(reply) > 3 {
 		// parity case
 		height, err = strconv.ParseUint(strings.Replace(reply[3], "0x", "", -1), 16, 64)
 		pendingReply.Number = reply[3]
