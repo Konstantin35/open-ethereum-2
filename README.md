@@ -2,8 +2,6 @@
 
 ![Miner's stats page](https://raw.githubusercontent.com/Konstantin35/open-ethereum-pool/master/Screenshot.png)
 
-[![Build Status](https://travis-ci.org/Konstantin35/open-ethereum-pool.svg?branch=master)](https://travis-ci.org/Konstantin35/open-ethereum-pool) [![Go Report Card](https://goreportcard.com/badge/github.com/sammy007/open-ethereum-pool)](https://goreportcard.com/report/github.com/sammy007/open-ethereum-pool)
-
 ### Features
 
 **This pool is no longer supported, expect only casual fixes.**
