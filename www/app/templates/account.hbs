@@ -21,7 +21,7 @@
       <div class="col-md-4 stats">
         {{#if model.stats.lastShare}}
         <div style="display: block;"><i class="fa fa-clock-o"></i>
-          Last Share Submitted: <span>{{format-relative (seconds-to-ms (string-to-int model.stats.lastShare))}}</span>
+          Last Share: <span>{{format-relative (seconds-to-ms (string-to-int model.stats.lastShare))}}</span> ({{with-metric-prefix model.stats.lastShareDiff}})
         </div>
         {{/if}}
         <div style="display: block;"><i class="fa fa-gears"></i> Workers Online: <span>{{format-number model.workersOnline}}</span></div>

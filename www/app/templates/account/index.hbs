@@ -8,15 +8,17 @@
           <th>ID</th>
           <th>Hashrate (rough, short average)</th>
           <th>Hashrate (accurate, long average)</th>
+		  <th>Port Diff</th>
           <th>Last Share</th>
         </tr>
       </thead>
       <tbody>
         {{#each-in model.workers as |k v|}}
-          <tr class="{{if v.offline "warning" "success"}}">
+          <tr class='{{if v.offline "warning" "success"}}'>
             <td>{{k}}</td>
             <td>{{format-hashrate v.hr}}</td>
             <td>{{format-hashrate v.hr2}}</td>
+			<td><span class="label label-success">{{with-metric-prefix v.portDiff}}</span></td>
             <td>{{format-relative (seconds-to-ms v.lastBeat)}}</td>
           </tr>
         {{/each-in}}
